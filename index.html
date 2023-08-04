@@ -276,13 +276,13 @@
                 like to chat please get in touch.
               </h3>
             </div>
-            <form netlify class="col-sm-6 skills crete" data-netlify-honeypot="bot-field">
+            <form netlify action="#" class="col-sm-6 skills crete" data-netlify="true" data-netlify-honeypot="bot-field">
               <div class="form-group">
                 <div class="row">
                   <div class="col">
                     <input
                       type="text"
-                      name="first"
+                      name="first-name"
                       id="first"
                       placeholder="First Name"
                       required
@@ -291,7 +291,7 @@
                   <div class="col">
                     <input
                       type="text"
-                      name="last"
+                      name="last-name"
                       id="last"
                       placeholder="Last Name"
                       required
@@ -312,20 +312,20 @@
                 <textarea
                   placeholder="Enter text here"
                   rows="5"
-                  name="text"
-                  type="message"
+                  name="message"
                   id="text"
                   required
                 ></textarea>
               </div>
               <input
-                class="hidden"
+                type="hidden"
                 name="bot-field"
                 placeholder="Don't fill this out if you're a human"
+                hidden
               />
               <br />
               <button type="submit" class="btn text-white bg-dark">Get in touch <i class="fa fa-envelope"> </i></button>
-            </form>
+            </form>                                 
           </div>
           <!-- hint-enable -->
           <hr />
